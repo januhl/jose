@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  node:
+    image: node
+    tty: true
+    volumes:
+      - .:/var/www/html:delegated
+    working_dir: /var/www/html
